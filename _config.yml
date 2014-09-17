@@ -4,14 +4,14 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: Peiyu Sun
+  name: sundev
   email: sundev@126.com
   link: http://sundev.net
   github: http://github.com/sundev126
 
 # 站点信息
-title: Peiyu的博客 
-description: Peiyu的博客
+title: Hello World 
+description: C...C...Code...
 url: http://sundev.net
 rss_url: /pages/atom.xml
 
