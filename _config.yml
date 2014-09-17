@@ -29,7 +29,7 @@ disqus:
   shortname: sunpy
 
 # 多说评论设置
-comment:
+comments:
   provider: duoshuo
   duoshuo:
     shortname:sundev
