@@ -30,9 +30,7 @@ disqus:
 
 # 多说评论设置
 comments:
-  provider: duoshuo
-  duoshuo:
-    shortname:sundev
+  shortname:sundev
 
 # 主题设置，自动激活某个标签
 active: 技术
