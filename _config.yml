@@ -17,7 +17,7 @@ rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
 gavatar: /public/img/gavatar.png
-favicon: http://sundev.net/public/img/favicon.ico
+favicon: /public/img/favicon.ico
 
 # google analytics 设置
 ga:
