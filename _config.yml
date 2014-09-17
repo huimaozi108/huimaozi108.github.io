@@ -4,26 +4,25 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  name: Peiyu Sun
+  email: sundev@126.com
+  link: http://sundev.net
+  github: http://github.com/sundev126
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: Peiyu的博客 
+description: Peiyu的博客
+url: http://sundev.net
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
-favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+gavatar: /public/imgs/gavatar.png
+favicon: /public/imgs/favicon.ico
 
 # google analytics 设置
 ga:
-  id: UA-54767140-1
-  url: yansu.org
+  id: UA-54888096-1
+  url: sundev.net
 
 # disqus 设置
 disqus:
