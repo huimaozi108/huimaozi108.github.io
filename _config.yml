@@ -29,8 +29,8 @@ disqus:
   shortname: sunpy
 
 # 多说评论设置
-comments:
-  shortname:sundev
+duoshuo:
+  shortname: sundev
 
 # 主题设置，自动激活某个标签
 active: 技术
