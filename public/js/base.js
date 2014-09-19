@@ -87,7 +87,7 @@ $(document).ready(function() {
     el.setAttribute('data-thread-key', $(this).attr('data-thread-key'));//必选参数
     el.setAttribute('data-url', window.location.href);//必选参数
     DUOSHUO.EmbedThread(el);
-    $(this).parent().append(el);
+    $(this).parent().append(el).remove();
   });
   content_effects();
 });
