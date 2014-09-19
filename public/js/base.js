@@ -83,17 +83,11 @@ $(document).ready(function() {
   });
 
   $('body').on('click', '.show-commend', function() {
-    $('<div></div>').addClass('ds-thread')
-      .attr({
-        'data-thread-key': $(this).attr('data-thread-key'),
-        'data-title': $(this).attr('data-title')
-      }).appendTo($(this).parent());
-    $.ajax({
-      type: "GET",
-      url: "http://static.duoshuo.com/embed.js",
-      dataType: "script",
-      cache: true
-    });
+    var el = document.createElement('div');   //该div不需要设置class="ds-thread"
+    el.setAttribute('data-thread-key', $(this).attr('data-thread-key'));//必选参数
+    el.setAttribute('data-url', window.location.href);//必选参数
+    DUOSHUO.EmbedThread(el);
+    $(this).parent().append(el);
   });
   content_effects();
 });
