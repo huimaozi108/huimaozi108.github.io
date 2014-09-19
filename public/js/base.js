@@ -92,20 +92,5 @@ $(document).ready(function() {
     $parent.append(el);
   });
 
-  //“返回顶部”相关代码
-  $('#container').parent().scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      $('#back-top').fadeIn();
-    } else {
-      $('#back-top').fadeOut();
-    }
-  });
-  $('#back-top a').click(function () {
-    $('#container').parent().animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-  });
-
   content_effects();
 });
