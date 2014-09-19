@@ -88,6 +88,12 @@ $(document).ready(function() {
         'data-thread-key': $(this).attr('data-thread-key'),
         'data-title': $(this).attr('data-title')
       }).appendTo($(this).parent());
+    $.ajax({
+      type: "GET",
+      url: "http://static.duoshuo.com/embed.js",
+      dataType: "script",
+      cache: true
+    });
   });
   content_effects();
 });
