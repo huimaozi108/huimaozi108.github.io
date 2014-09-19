@@ -95,6 +95,7 @@ blockquote p {
   position: fixed;
   bottom: 30px;
   right: 10px;
+  display: none;
 }
 #back-top a {
   width: 54px;
