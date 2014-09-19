@@ -93,9 +93,7 @@ $(document).ready(function() {
   });
 
   //“返回顶部”相关代码
-  $("#back-top").hide();
-$(document).ready(function () {
-  $(window).scroll(function () {
+  $('#content').scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('#back-top').fadeIn();
     } else {
@@ -103,12 +101,11 @@ $(document).ready(function () {
     }
   });
   $('#back-top a').click(function () {
-    $('body,html').animate({
+    $('#content').animate({
       scrollTop: 0
     }, 800);
     return false;
   });
-});
 
   content_effects();
 });
