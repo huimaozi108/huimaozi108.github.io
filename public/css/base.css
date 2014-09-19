@@ -94,7 +94,7 @@ blockquote p {
 #back-top {
   position: fixed;
   bottom: 30px;
-  margin-left: 1040px;
+  right: 10px;
 }
 #back-top a {
   width: 54px;
