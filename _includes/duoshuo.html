@@ -1,9 +1,10 @@
 <!-- Duoshuo Comment BEGIN -->
+{% if page.id %}
     <div id="comments">
-        <!-- <div class="ds-thread" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %}  data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"></div> -->
         <button type="button" name="{{ site.disqus.shortname }}"
             data-thread-key="{{ page.id }}"
             data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"
             class="btn btn-default show-commend">显示评论</button>
     </div>
+{% endif %}
 <!-- Duoshuo Comment END -->
