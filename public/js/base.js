@@ -93,7 +93,7 @@ $(document).ready(function() {
   });
 
   //“返回顶部”相关代码
-  $('#content').scroll(function () {
+  $('#content').parent().scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('#back-top').fadeIn();
     } else {
@@ -101,7 +101,7 @@ $(document).ready(function() {
     }
   });
   $('#back-top a').click(function () {
-    $('#content').animate({
+    $('#content').parent().animate({
       scrollTop: 0
     }, 800);
     return false;
