@@ -89,7 +89,7 @@ $(document).ready(function() {
     DUOSHUO.EmbedThread(el);
     var $parent = $(this).parent();
     $(this).remove();
-    $parent().append(el);
+    $parent.append(el);
   });
   content_effects();
 });
