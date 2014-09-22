@@ -97,6 +97,7 @@ $('content').append('<p>');
 <div id="right" class="box">
     <span>right</span>
 </div>
+<div style="clear:left; display:none;"></div>
 
 ###`$.html()`方法的使用
 
