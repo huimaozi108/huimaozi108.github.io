@@ -68,3 +68,4 @@ $('content').append('<p>');
 </div>
 ```
 
+<div style="width:100px; height:100px; border:2px solid red;"></div>
