@@ -47,7 +47,7 @@ function content_effects() {
       tag = current.prop('tagName').substr(-1);
       $("#nav").append("<div style='margin-left:" + 15 * (tag - 1) + "px'><a id='link" + i + "' href='#title" + i + "'>" + current.html() + "</a></div>");
     });
-    $("pre").addClass("prettyprint");
+    $("pre").addClass("prettyprint linenums");
     prettyPrint();
     $('#content img').addClass('img-thumbnail').parent('p').addClass('center');
     $('#content_btn').show();
@@ -82,6 +82,7 @@ $(document).ready(function() {
     content_effects();
   });
 
+  //评论按钮动作
   $('body').on('click', '.show-commend', function() {
     var el = document.createElement('div');   //该div不需要设置class="ds-thread"
     el.setAttribute('data-thread-key', $(this).attr('data-thread-key'));//必选参数
