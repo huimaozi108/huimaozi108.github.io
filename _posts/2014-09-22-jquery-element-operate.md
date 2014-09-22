@@ -67,4 +67,3 @@ $('content').append('<p>');
 </div>
 ```
 
-{% include postcode/2014-09-22/html1.html %}
