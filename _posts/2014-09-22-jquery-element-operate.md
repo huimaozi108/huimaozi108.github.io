@@ -105,21 +105,6 @@ $('content').append('<p>');
 $('#middle').html('<div class="child">$.html()');
 ```
 
-<form>
-    <input type="button" value="执行"
-        onclick="javascript:$(this).next().find('#middle').html('&lt;div class="child"&gt;html');" />
-    <div>
-        <div id="top" class="box">
-            <span>top</span>
-        </div>
-        <div id="middle" class="box">
-            <span>middle</span>
-        </div>
-        <div id="bottom" class="box">
-            <span>bottom</span>
-        </div>
-    </div>
-</form>
-<iframe src="/postcode/2014-09-22/html1.html"></iframe>
+<iframe src="/postcode/2014-09-22/html1.html" style="border:0;"></iframe>
 
 
