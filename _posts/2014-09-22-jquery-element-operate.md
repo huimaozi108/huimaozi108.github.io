@@ -57,14 +57,14 @@ $('content').append('<p>');
 *html代码*
 
 ```html
-<div id="left" class="box">  
-    <span>left</span>  
+<div id="top" class="box">  
+    <span>top</span>  
 </div>  
-<div id="center" class="box">  
-    <span>center</span>  
+<div id="middle" class="box">  
+    <span>middle</span>  
 </div>  
-<div id="right" class="box">  
-    <span>right</span>  
+<div id="bottom" class="box">  
+    <span>bottom</span>  
 </div>
 ```
 
@@ -78,7 +78,6 @@ $('content').append('<p>');
         border:2px solid red;  
         padding:10px;  
         text-align:center;
-        float: left; 
     }  
     .child  
     {  
@@ -88,16 +87,35 @@ $('content').append('<p>');
         text-align:center;  
     }
 </style>
-<div id="left" class="box">
-    <span>left</span>
+<div id="top" class="box">
+    <span>top</span>
 </div>
-<div id="center" class="box">
-    <span>center</span>
+<div id="middle" class="box">
+    <span>middle</span>
 </div>
-<div id="right" class="box">
-    <span>right</span>
+<div id="bottom" class="box">
+    <span>bottom</span>
 </div>
-<div style="clear:left; display:none;"></div>
 
 ###`$.html()`方法的使用
 
+我们执行以下语句：
+
+```js
+$('#middle').html('<div class="child">$.html()');
+```
+
+<input type="button" value="执行"
+    onclick="javascript:$(this).next().find('#middle').html('<div class="child">$.html()');" />
+
+<div>
+    <div id="top" class="box">
+        <span>top</span>
+    </div>
+    <div id="middle" class="box">
+        <span>middle</span>
+    </div>
+    <div id="bottom" class="box">
+        <span>bottom</span>
+    </div>
+</div>
