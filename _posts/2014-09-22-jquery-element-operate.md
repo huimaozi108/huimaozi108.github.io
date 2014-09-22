@@ -22,6 +22,5 @@ description:
 `$('content').append('<p>');`
 那么实际插入到DOM中的html代码是
 ```html
-    <p></p>
+<p></p>
 ```
-
