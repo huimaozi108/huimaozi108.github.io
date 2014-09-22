@@ -9,7 +9,7 @@ description:
 
 >做前端开发的，免不了的要操作页面HTML代码，JQuery中提供了许多非常便捷的方法，使我们很方便的操作HTML代码，具体的方法有：
 
-##相关方法
+###相关方法
 
 1. `$.html()`：给元素添加html代码或者清空元素内部的内容（参数为**空字符串**）
 2. `$.append()`：向元素的末尾添加元素
@@ -57,15 +57,15 @@ $('content').append('<p>');
 *html代码*
 
 ```html
-<div id="top" class="box">  
-    <span>top</span>  
-</div>  
-<div id="middle" class="box">  
-    <span>middle</span>  
-</div>  
-<div id="bottom" class="box">  
-    <span>bottom</span>  
-</div>
+<span id="left" class="box">  
+    <span>left</span>  
+</span>  
+<span id="center" class="box">  
+    <span>center</span>  
+</span>  
+<span id="right" class="box">  
+    <span>right</span>  
+</span>
 ```
 
 效果如下：
@@ -87,12 +87,15 @@ $('content').append('<p>');
         text-align:center;  
     }
 </style>
-<div id="top" class="box">
-    <span>top</span>
-</div>
-<div id="middle" class="box">
-    <span>middle</span>
-</div>
-<div id="bottom" class="box">
-    <span>bottom</span>
-</div>
+<span id="left" class="box">
+    <span>left</span>
+</span>
+<span id="center" class="box">
+    <span>center</span>
+</span>
+<span id="right" class="box">
+    <span>right</span>
+</span>
+
+##`$.html()`方法的使用
+
