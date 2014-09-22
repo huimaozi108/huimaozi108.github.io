@@ -43,7 +43,7 @@ $('content').append('<p>');
      height:100px;   
      border:2px solid red;  
      padding:10px;  
-     text-align:center;  
+     text-align:center;
  }  
  .child  
  {  
@@ -57,15 +57,15 @@ $('content').append('<p>');
 *html代码*
 
 ```html
-<span id="left" class="box">  
+<div id="left" class="box">  
     <span>left</span>  
-</span>  
-<span id="center" class="box">  
+</div>  
+<div id="center" class="box">  
     <span>center</span>  
-</span>  
-<span id="right" class="box">  
+</div>  
+<div id="right" class="box">  
     <span>right</span>  
-</span>
+</div>
 ```
 
 效果如下：
@@ -74,28 +74,29 @@ $('content').append('<p>');
     .box  
     {  
         width:100px;   
-        line-height:100px;   
+        height:100px;   
         border:2px solid red;  
         padding:10px;  
-        text-align:center;  
+        text-align:center;
+        display: inline; 
     }  
     .child  
     {  
         width:70px;   
-        line-height:20px;   
+        height:20px;   
         border:2px solid red;  
         text-align:center;  
     }
 </style>
-<span id="left" class="box">
+<div id="left" class="box">
     <span>left</span>
-</span>
-<span id="center" class="box">
+</div>
+<div id="center" class="box">
     <span>center</span>
-</span>
-<span id="right" class="box">
+</div>
+<div id="right" class="box">
     <span>right</span>
-</span>
+</div>
 
 ##`$.html()`方法的使用
 
