@@ -21,6 +21,7 @@ description:
 需要指出一点：**JQuery会自动的完善html代码**，比如你执行以下操作
 `$('content').append('<p>');`
 那么实际插入到DOM中的html代码是
+
 ```php
     <p></p>
     <input type="button" value="Hello" />
