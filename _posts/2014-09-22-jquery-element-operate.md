@@ -68,4 +68,31 @@ $('content').append('<p>');
 </div>
 ```
 
-<div style="width:100px; height:100px; border:2px solid red;"></div>
+效果如下：
+
+<style type="text/css">
+    .box  
+    {  
+        width:100px;   
+        height:100px;   
+        border:2px solid red;  
+        padding:10px;  
+        text-align:center;  
+    }  
+    .child  
+    {  
+        width:70px;   
+        height:20px;   
+        border:2px solid red;  
+        text-align:center;  
+    }
+</style>
+<div id="top" class="box">
+    <span>top</span>
+</div>
+<div id="middle" class="box">
+    <span>middle</span>
+</div>
+<div id="bottom" class="box">
+    <span>bottom</span>
+</div>
