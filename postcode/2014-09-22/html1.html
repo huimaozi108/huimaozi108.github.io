@@ -1,6 +1,9 @@
-<form>
-	<style type="text/css">
-		.box  
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .box  
          {  
              width:100px;   
              height:100px;   
@@ -15,14 +18,23 @@
              border:2px solid red;  
              text-align:center;  
          }
-	</style>
-	<div id="top" class="box">  
-	    <span>top</span>  
-	</div>  
-	<div id="middle" class="box">  
-	    <span>middle</span>  
-	</div>  
-	<div id="bottom" class="box">  
-	    <span>bottom</span>  
-	</div>
-</form>
+    </style>
+</head>
+<body>
+    <div id="top" class="box">  
+        <span>top</span>  
+    </div>  
+    <div id="middle" class="box">  
+        <span>middle</span>  
+    </div>  
+    <div id="bottom" class="box">  
+        <span>bottom</span>  
+    </div>
+    <input type="button" value="html()" />
+    <script type="text/javascript">
+        $('button').click(function () {
+            $('#middle').html('<div class="child">$.html()');
+        });
+    </script>
+</body>
+</html>
