@@ -105,17 +105,20 @@ $('content').append('<p>');
 $('#middle').html('<div class="child">$.html()');
 ```
 
-<input type="button" value="执行"
-    onclick="javascript:$(this).next().find('#middle').html('&lt;div class="child"&gt;$.html()');alert(1);" />
+<form>
+    <input type="button" value="执行"
+        onclick="javascript:alert(1);" />
+    <div>
+        <div id="top" class="box">
+            <span>top</span>
+        </div>
+        <div id="middle" class="box">
+            <span>middle</span>
+        </div>
+        <div id="bottom" class="box">
+            <span>bottom</span>
+        </div>
+    </div>
+</form>
 
-<div>
-    <div id="top" class="box">
-        <span>top</span>
-    </div>
-    <div id="middle" class="box">
-        <span>middle</span>
-    </div>
-    <div id="bottom" class="box">
-        <span>bottom</span>
-    </div>
-</div>
+
