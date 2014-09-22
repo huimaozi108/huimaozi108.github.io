@@ -106,7 +106,7 @@ $('#middle').html('<div class="child">$.html()');
 ```
 
 <input type="button" value="执行"
-    onclick="javascript:$(this).next().find('#middle').html('&gt;div class="child"&lt;$.html()');" />
+    onclick="javascript:$(this).next().find('#middle').html('&lt;div class="child"&gt;$.html()');alert(1);" />
 
 <div>
     <div id="top" class="box">
