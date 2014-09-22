@@ -35,7 +35,7 @@ $('content').append('<p>');
 下面的所有操作将针对以下代码，代码及效果如下：
 
 *css代码*
-```css
+```
 .box  
  {  
      width:100px;   
@@ -67,3 +67,4 @@ $('content').append('<p>');
 </div>
 ```
 
+{% include postcode/2014-09-22/html1.html %}
