@@ -19,10 +19,13 @@ description:
 8. empty：清空元素**内部**的所以内容，它只清空内部的内容，但标记仍在DOM中
 9. remove：从DOM中移除整个元素（包含元素本身）
 需要指出一点：**JQuery会自动的完善html代码**，比如你执行以下操作
-`$('content').append('<p>');`
+
+```js
+$('content').append('<p>');
+```
+
 那么实际插入到DOM中的html代码是
 
-```php
-    <p></p>
-    <input type="button" value="Hello" />
+```html
+<p></p>
 ```
