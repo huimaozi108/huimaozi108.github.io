@@ -1,7 +1,9 @@
 ### 我的博客
 
 地址：[http://sundev.net](http://sundev.net)
-原作：[suyan](http://yansu.org)
+
+>原作：[suyan](http://yansu.org)
+
 ### 安装说明
 
 1. fork库到自己的github
