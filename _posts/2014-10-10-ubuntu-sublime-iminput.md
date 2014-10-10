@@ -139,7 +139,7 @@ Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
 
 
 ##参考
-1. [Ubuntu系统下Sublime Text 2中fcitx中文输入法的解决方法](http://forum.ubuntu.org.cn/viewtopic.php?t=418712)
-2. [完美解决 Linux 下 Sublime Text 中文输入](http://my.oschina.net/tsl0922/blog/113495)
-3. [Ubuntu下Sublime Text 3解决无法输入中文的方法](http://jingyan.baidu.com/article/f3ad7d0ff8731609c3345b3b.html)
-4. [搜狗输入法 Linux版](http://pinyin.sogou.com/linux/?r=pinyin)
+1: http://forum.ubuntu.org.cn/viewtopic.php?t=418712 (Ubuntu系统下Sublime Text 2中fcitx中文输入法的解决方法)
+2: http://my.oschina.net/tsl0922/blog/113495 (完美解决 Linux 下 Sublime Text 中文输入)
+3. http://jingyan.baidu.com/article/f3ad7d0ff8731609c3345b3b.html (Ubuntu下Sublime Text 3解决无法输入中文的方法)
+4. http://pinyin.sogou.com/linux/?r=pinyin (搜狗输入法 Linux版)
