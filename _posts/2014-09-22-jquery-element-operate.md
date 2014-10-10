@@ -105,6 +105,6 @@ $('content').append('<p>');
 $('#middle').html('<div class="child">$.html()');
 ```
 
-<iframe src="/postcode/2014-09-22/html1.html" name="html1" frameborder="0"  scrolling="no" onload="this.height=window.frames['html1'].document.body.scrollHeight;"></iframe>
+<iframe src="/post_res/2014-09-22/code/html1.html" name="html1" frameborder="0"  scrolling="no" onload="this.height=window.frames['html1'].document.body.scrollHeight;"></iframe>
 
 
