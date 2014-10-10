@@ -8,6 +8,21 @@
 <script src="/public/js/jquery.pjax.js"></script>
 <script src="/public/js/prettify/prettify.js"></script>
 <script src="/public/js/base.js"></script>
+
+<!-- 以http开头的链接，在新窗口中打开 START-->
+<script>
+	function addBlankTargetForLinks () {
+	  $('a[href^="http"]').each(function(){
+	      $(this).attr('target', '_blank');
+	  });
+	}
+
+	$(document).on('DOMNodeInserted', function(event) {
+	  addBlankTargetForLinks();
+	});
+</script>
+<!-- 以http开头的链接，在新窗口中打开 END-->
+
 <script>
     $('a[href="#{{ site.active }}"]').tab('show');
 </script>
@@ -18,5 +33,6 @@
 <script src="http://static.duoshuo.com/embed.js"></script>
 <!--多说js加载结束，一个页面只需要加载一次 -->
 
-<!-- googleanalytics 代码 -->
+<!-- googleanalytics 代码 START-->
 {% include googleanalytics.html %}
+<!-- googleanalytics 代码 END-->

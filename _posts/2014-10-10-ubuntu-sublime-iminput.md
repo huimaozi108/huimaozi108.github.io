@@ -17,7 +17,7 @@ description:
 
 ###第一步、安装搜狗输入法
 
-- 首先到[搜狗输入法 Linux版](http://pinyin.sogou.com/linux/?r=pinyin){:target="_blank"}下载安装包
+- 首先到[搜狗输入法 Linux版][4]下载安装包
 - 如果Ubuntu是14.04，则直接安装，12.04的话按照官网的教程安装
 - 安装后重启机器就可以使用搜狗输入法了，但是在Sublime Text 3中还无法使用
 
@@ -142,3 +142,4 @@ Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
 1. [Ubuntu系统下Sublime Text 2中fcitx中文输入法的解决方法](http://forum.ubuntu.org.cn/viewtopic.php?t=418712)
 2. [完美解决 Linux 下 Sublime Text 中文输入](http://my.oschina.net/tsl0922/blog/113495)
 3. [Ubuntu下Sublime Text 3解决无法输入中文的方法](http://jingyan.baidu.com/article/f3ad7d0ff8731609c3345b3b.html)
+4. [搜狗输入法 Linux版](http://pinyin.sogou.com/linux/?r=pinyin)
