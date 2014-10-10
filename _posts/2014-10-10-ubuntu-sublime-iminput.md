@@ -17,7 +17,7 @@ description:
 
 ###第一步、安装搜狗输入法
 
-- 首先到[搜狗输入法 Linux版](http://pinyin.sogou.com/linux/?r=pinyin)下载安装包
+- 首先到[搜狗输入法 Linux版](http://pinyin.sogou.com/linux/?r=pinyin){:target="_blank"}下载安装包
 - 如果Ubuntu是14.04，则直接安装，12.04的话按照官网的教程安装
 - 安装后重启机器就可以使用搜狗输入法了，但是在Sublime Text 3中还无法使用
 
@@ -109,8 +109,10 @@ void gtk_im_context_set_client_window (GtkIMContext *context,
 
 2. 安装C/C++的编译环境和`gtk libgtk2.0-dev`
 
-    sudo apt-get install build-essential
-    sudo apt-get install libgtk2.0-dev
+```
+sudo apt-get install build-essential
+sudo apt-get install libgtk2.0-dev
+```
 
 3. 编译共享内库
 
@@ -120,13 +122,18 @@ gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags 
 
 4. 将共享库拷贝到Sublime Text 3目录下(默认在/opt/sublime_text下)
 
-    sudo cp libsublime-imfix.so /opt/sublime_text/
+```
+sudo cp libsublime-imfix.so /opt/sublime_text/
+```
 
 5. 编辑/usr/bin/subl文件
-    #!/bin/sh
-    SUBLIME_HOME="/opt/sublime_text"
-    LD_LIB=$SUBLIME_HOME/libsublime-imfix.so
-    Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
+
+```
+#!/bin/sh
+SUBLIME_HOME="/opt/sublime_text"
+LD_LIB=$SUBLIME_HOME/libsublime-imfix.so
+Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
+```
 
 6. 编辑/usr/share/applications/sublime_text.desktop,将里面的`/opt/sublime_text/sublime_text`全部替换为‘subl’
 
