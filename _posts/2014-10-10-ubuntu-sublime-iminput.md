@@ -23,7 +23,7 @@ description:
 
 ###第二步、给Sublime打补丁
 
-1. 保存下面的代码为`sublime_imfix.c`
+####保存下面的代码为`sublime_imfix.c`
 
 ```c
 /*
@@ -107,26 +107,26 @@ void gtk_im_context_set_client_window (GtkIMContext *context,
 }
 ```
 
-2. 安装C/C++的编译环境和`gtk libgtk2.0-dev`
+####安装C/C++的编译环境和`gtk libgtk2.0-dev`
 
 ```
 sudo apt-get install build-essential
 sudo apt-get install libgtk2.0-dev
 ```
 
-3. 编译共享内库
+####编译共享内库
 
 ```
 gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC
 ```
 
-4. 将共享库拷贝到Sublime Text 3目录下(默认在/opt/sublime_text下)
+####将共享库拷贝到Sublime Text 3目录下(默认在/opt/sublime_text下)
 
 ```
 sudo cp libsublime-imfix.so /opt/sublime_text/
 ```
 
-5. 编辑/usr/bin/subl文件
+####编辑/usr/bin/subl文件
 
 ```
 #!/bin/sh
@@ -135,7 +135,7 @@ LD_LIB=$SUBLIME_HOME/libsublime-imfix.so
 Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
 ```
 
-6. 编辑/usr/share/applications/sublime_text.desktop,将里面的`/opt/sublime_text/sublime_text`全部替换为‘subl’
+####编辑/usr/share/applications/sublime_text.desktop文件,将里面的 `/opt/sublime_text/sublime_text` 全部替换为 `subl`
 
 
 ##参考
