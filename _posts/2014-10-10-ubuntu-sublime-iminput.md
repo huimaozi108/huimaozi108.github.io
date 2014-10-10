@@ -135,7 +135,7 @@ LD_LIB=$SUBLIME_HOME/libsublime-imfix.so
 Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
 ```
 
-**编辑/usr/share/applications/sublime_text.desktop文件,将里面的 `/opt/sublime_text/sublime_text` 全部替换为 `subl`**
+**编辑/usr/share/applications/sublime_text.desktop文件,将里面的 `/opt/sublime_text/sublime_text`  全部替换为  `subl`**
 
 
 ##参考
