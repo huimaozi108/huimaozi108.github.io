@@ -44,6 +44,7 @@ $('content').append('<p>');
      border:2px solid red;  
      padding:10px;  
      text-align:center;
+     float:left;
  }  
  .child  
  {  
@@ -78,6 +79,7 @@ $('content').append('<p>');
         border:2px solid red;  
         padding:10px;  
         text-align:center;
+        float: left;
     }  
     .child  
     {  
@@ -96,6 +98,7 @@ $('content').append('<p>');
 <div id="bottom" class="box">
     <span>bottom</span>
 </div>
+<div style="clear:both;"></div>
 
 ###`$.html()`方法的使用
 
