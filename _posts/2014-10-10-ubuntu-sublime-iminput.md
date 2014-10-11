@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 14.04下Sublime Text 3的安装，使用搜狗中文输入的解决办法
 category: 技术
-tags: [Ubuntu Sublime]
+tags: [Ubuntu, Sublime]
 keywords: Ubuntu,14.04,Sublime,搜狗输入法,中文输入
 description: 
 ---
@@ -135,7 +135,13 @@ LD_LIB=$SUBLIME_HOME/libsublime-imfix.so
 Exec= bash -c "LD_PRELOAD=$LD_LIB $SUBLIME_HOME/sublime_text" "$@"
 ```
 
-**编辑/usr/share/applications/sublime_text.desktop文件,将里面的 `/opt/sublime_text/sublime_text`  全部替换为  `subl`**
+编辑/usr/share/applications/sublime_text.desktop文件,将里面的
+
+    /opt/sublime_text/sublime_text
+
+全部替换为
+
+    subl
 
 
 ##参考
