@@ -41,7 +41,7 @@ $('content').append('<p>');
  {  
      width:100px;   
      height:100px;   
-     border:2px solid red;  
+     border:2px solid gray;  
      padding:10px;  
      text-align:center;
      float:left;
@@ -50,7 +50,7 @@ $('content').append('<p>');
  {  
      width:70px;   
      height:20px;   
-     border:2px solid red;  
+     border:2px solid black;  
      text-align:center;  
  }
 ```
@@ -76,7 +76,7 @@ $('content').append('<p>');
     {  
         width:100px;   
         height:100px;   
-        border:2px solid red;  
+        border:2px solid gray;  
         padding:10px;  
         text-align:center;
         float: left;
@@ -85,7 +85,7 @@ $('content').append('<p>');
     {  
         width:70px;   
         height:20px;   
-        border:2px solid red;  
+        border:2px solid black;  
         text-align:center;  
     }
 </style>
