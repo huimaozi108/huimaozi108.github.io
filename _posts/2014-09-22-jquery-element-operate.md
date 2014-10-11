@@ -7,7 +7,7 @@ keywords: JQuery,JS,Javascript,HTML
 description:
 ---
 
->做前端开发的，免不了的要操作页面HTML代码，JQuery中提供了许多非常便捷的方法，使我们很方便的操作HTML代码，具体的方法有：
+>做前端开发的，免不了的要操作页面HTML代码，JQuery中提供了许多非常便捷的方法，使我们很方便的操作HTML代码。
 
 ##相关方法
 
@@ -58,14 +58,14 @@ $('content').append('<p>');
 *html代码*
 
 ```html
-<div id="top" class="box">  
-    <span>top</span>  
+<div id="left" class="box">  
+    <span>left</span>  
 </div>  
-<div id="middle" class="box">  
-    <span>middle</span>  
+<div id="center" class="box">  
+    <span>center</span>  
 </div>  
-<div id="bottom" class="box">  
-    <span>bottom</span>  
+<div id="right" class="box">  
+    <span>right</span>  
 </div>
 ```
 
@@ -89,28 +89,130 @@ $('content').append('<p>');
         text-align:center;  
     }
 </style>
-<div id="top" class="box">
-    <span>top</span>
+<div id="left" class="box">
+    <span>left</span>
 </div>
-<div id="middle" class="box">
-    <span>middle</span>
+<div id="center" class="box">
+    <span>center</span>
 </div>
-<div id="bottom" class="box">
-    <span>bottom</span>
+<div id="right" class="box">
+    <span>right</span>
 </div>
 <div style="clear:both;"></div>
 
-###`$.html()`方法的使用
+###一、`$.html()`方法的使用
 
 我们执行以下语句：
 
 ```js
-$('#middle').html('<div class="child">$.html()');
+$('#center').html('<div class="child">$.html()');
 ```
 
-<iframe src="/post_res/2014-09-22/code/html1.html"
+<iframe src="/post_res/2014-09-22/code/html_html.html"
     name="html1" frameborder="0"  scrolling="no" 
     style="width:80%;"
     onload="this.height=window.frames['html1'].document.body.scrollHeight;"></iframe>
 
+再来看看最终代码
 
+```html
+<div id="center" class="box">
+    <div class="child">$.html()</div>
+</div>
+```
+
+这里是完整的html代码，也就是说*JQuery为我们补全了代码*，这一点需要注意，JQuery为我们带来了方便，但是当需要精确控制html代码的时候，需要注意。
+
+`html()`函数的作用原理首先是移除目标元素内部的html代码，然后将新的代码添加到目标元素。
+
+###二、`append()`、`appendTo()`方法的使用
+
+执行以下语句：
+
+    $('#center').append('<span class="child">append()</span>');
+
+*注：为了编程规范，html代码都使用完整的html标记*
+
+效果如下：
+
+<iframe src="/post_res/2014-09-22/code/html_append_appendto.html"
+    name="html2" frameborder="0"  scrolling="no" 
+    style="width:80%;"
+    onload="this.height=window.frames['html2'].document.body.scrollHeight;"></iframe>
+
+最终代码：
+
+```html
+<div id="center" class="box">
+    <span>center</span>
+    <span class="child">$.append()</span>
+</div>
+```
+
+`append()`方法将html附加到了`<span>center</span>`之后。
+
+`appendTo()`方法的效果与`append()`方法一样，只不过是写法不一样：
+
+    $('<span class="child">$.append()</span>').appendTo('#center');
+
+###三、`after()`、`insertAfter()`方法的使用
+
+执行以下语句：
+
+    $('#center').after('<span class="child" style="float:left;">$.after()</span>');
+
+效果如下：
+
+<iframe src="/post_res/2014-09-22/code/html_after_insertafter.html"
+    name="html3" frameborder="0"  scrolling="no" 
+    style="width:80%;"
+    onload="this.height=window.frames['html3'].document.body.scrollHeight;"></iframe>
+
+after函数的作用是将html代码插入指定元素的后面，如果后面有元素，则将其后移，然后插入html代码。
+
+insertAfter函数与after函数的作用是一样的，上面代码的insertAfter版本为：
+
+    $('<span class="child" style="float:left;">after()</span>').insertAfter('#center');
+
+###四、`before()`、`insertBefore()`方法的使用
+
+这连个函数的原理与after、insertAfter是一样的，只不过before、insertBefore是插入到目标元素的前面，大家可以自行参考after、insertAfter。
+
+###五、`empty()`、`remove()`方法的使用
+
+执行以下代码：
+
+    $('#center').empty();
+
+<iframe src="/post_res/2014-09-22/code/html_empty.html"
+    name="html4" frameborder="0"  scrolling="no" 
+    style="width:80%;"
+    onload="this.height=window.frames['html4'].document.body.scrollHeight;"></iframe>
+
+再来看看最终的html代码：
+
+    <div id="center" class="box"></box>
+
+里面的html代码被情况了，然而元素的本身还是存在的。
+
+执行以下语句：
+
+    $('#center').remove();
+
+<iframe src="/post_res/2014-09-22/code/html_remove.html"
+    name="html5" frameborder="0"  scrolling="no" 
+    style="width:80%;"
+    onload="this.height=window.frames['html5'].document.body.scrollHeight;"></iframe>
+
+最终的html代码：
+
+```html
+<div id="left" class="box">
+    <span>left</span>
+</div>
+<div id="right" class="box">
+    <span>right</span>
+</div>
+```
+
+中间的元素整个被删除了，也就是说`remove()`方法将目标元素整个从DOM中移除。

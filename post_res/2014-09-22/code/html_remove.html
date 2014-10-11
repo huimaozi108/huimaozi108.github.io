@@ -22,21 +22,22 @@
     </style>
 </head>
 <body>
-    <div id="top" class="box">  
-        <span>top</span>  
+    <div id="left" class="box">  
+        <span>left</span>  
     </div>  
-    <div id="middle" class="box">  
-        <span>middle</span>  
+    <div id="center" class="box">  
+        <span>center</span>  
     </div>  
-    <div id="bottom" class="box">  
-        <span>bottom</span>  
+    <div id="right" class="box">  
+        <span>right</span>  
     </div>
     <div style="clear:both;"></div>
-    <input type="button" value="html()" />
+    <input type="button" value="点击查看效果" />
     <script type="text/javascript" src="/public/js/jquery.js"></script>
     <script type="text/javascript">
         $('input').click(function () {
-            $('#middle').html('<div class="child">$.html()');
+            $('#center').remove();
+            $(this).hide();
         });
     </script>
 </body>
