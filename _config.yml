@@ -37,8 +37,6 @@ active: 技术
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Python
-  - OpenStack
 
 # 中文本地化
 locals:
